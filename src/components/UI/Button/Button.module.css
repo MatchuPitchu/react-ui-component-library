@@ -1,0 +1,58 @@
+.btn-container {
+  position: relative;
+  margin: 0 auto;
+  width: 180px;
+  height: 60px;
+}
+
+.btn {
+  font: inherit;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #f7cc4b;
+  width: 180px;
+  height: 60px;
+  padding: 0.75rem 3.5rem;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #f7cc4b;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover,
+.btn:active {
+  transition: 1s ease-in-out;
+  border: 0px;
+}
+
+.btn:focus {
+  outline: none;
+  background-color: #fff1c6;
+}
+
+.btn svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #f7cc4b;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+button:disabled,
+button:focus:disabled,
+button:hover:disabled,
+button:active:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #666666;
+  cursor: not-allowed;
+}

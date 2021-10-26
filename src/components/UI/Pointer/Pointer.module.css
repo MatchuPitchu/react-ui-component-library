@@ -1,0 +1,41 @@
+.scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointer {
+  display: flex;
+  height: 6rem;
+  width: 3rem;
+  border: 1px solid #f7cc4b;
+  border-radius: 10px;
+}
+
+.pointer span {
+  height: 1rem;
+  width: 1rem;
+  border-right: 4px solid #f7cc4b;
+  border-bottom: 4px solid #f7cc4b;
+  border-radius: 0%;
+  background-color: transparent;
+  margin: auto;
+  animation: move 1s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    opacity: 1;
+    transform: translateY(-2rem);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: rotate(45deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(1.5rem) rotate(45deg);
+  }
+}
